@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculator</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <h1>Calculator</h1>
+  <div id="calculator">
+    <div class="display">
+      <input type="text" id="display" placeholder="0" />
+    </div>
+    <div class="calculator">
+      <table>
+        <tr class="row">
+          <td>
+            <button id="add" class="operator" onclick="onClickHandler('+')">
+              +
+            </button>
+          </td>
+          <td>
+            <button id="subt" class="operator" onclick="onClickHandler('-')">
+              -
+            </button>
+          </td>
+          <td>
+            <button id="pro" class="operator" onclick="onClickHandler('*')">
+              x
+            </button>
+          </td>
+          <td>
+            <button id="div" class="operator" onclick="onClickHandler('/')">
+              &divide;
+            </button>
+          </td>
+        </tr>
+        <tr class="row">
+          <td><button class="num" onclick="onClickHandler(7)">7</button></td>
+          <td><button class="num" onclick="onClickHandler(8)">8</button></td>
+          <td><button class="num" onclick="onClickHandler(9)">9</button></td>
+          <td rowspan="10">
+            <button class="operator" style="padding: 10px; height: 200px" onclick="equalsto('=')">
+              =
+            </button>
+          </td>
+        </tr>
+        <tr class="row">
+          <td><button class="num" onclick="onClickHandler(4)">4</button></td>
+          <td><button class="num" onclick="onClickHandler(5)">5</button></td>
+          <td><button class="num" onclick="onClickHandler(6)">6</button></td>
+        </tr>
+        <tr class="row">
+          <td><button class="num" onclick="onClickHandler(1)">1</button></td>
+          <td><button class="num" onclick="onClickHandler(2)">2</button></td>
+          <td><button class="num" onclick="onClickHandler(3)">3</button></td>
+        </tr>
+        <tr class="row">
+          <td><button class="num" onclick="onClickHandler(0)">0</button></td>
+          <td>
+            <button class="num" onclick="onClickHandler('.')">.</button>
+          </td>
+          <td><button class="num" onclick="clearScreen()">AC</button></td>
+        </tr>
+      </table>
+    </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>
